@@ -5,4 +5,6 @@
     <string name="search">Search</string>
     <string name="city_name">City Name</string>
     <string name="weather_app">Weather App</string>
+    <string name="response_city_name">Response City name</string>
+    <string name="teperature_c">Teperature °C</string>
 </resources>

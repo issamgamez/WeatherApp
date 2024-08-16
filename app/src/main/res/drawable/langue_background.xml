@@ -4,10 +4,10 @@
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#e6f902"
+                android:startColor="#0209f9"
                 android:endColor="#e6f902"
                 android:angle="45"/>
-            <corners android:radius="40dp"/>
+            <corners android:radius="10dp"/>
         </shape>
     </item>
     <!-- Border -->
@@ -15,7 +15,7 @@
         <shape android:shape="rectangle">
             <stroke
                 android:width="2dp"/>
-            <corners android:radius="40dp"/>
+            <corners android:radius="10dp"/>
         </shape>
     </item>
 </layer-list>

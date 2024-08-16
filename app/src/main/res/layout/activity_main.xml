@@ -5,30 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_background"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/BackApp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/todo"
-        android:scaleType="centerCrop"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back" />
+
 
     <Spinner
         android:id="@+id/SpinnerLangue"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/button_background"
+        android:background="@drawable/langue_background"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/GetStartedTextView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +28,7 @@
         android:id="@+id/title"
         android:layout_width="250dp"
         android:layout_height="120dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="444dp"
         android:gravity="center"
         android:padding="12dp"
         android:text="@string/weather_app"
@@ -49,6 +36,7 @@
         android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -62,7 +50,7 @@
         android:padding="12dp"
         android:text="@string/get_start"
         android:textAllCaps="true"
-        android:textColor="@android:color/white"
+        android:textColor="#9f02f9"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,6 +58,17 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.79" />
 
+    <ImageView
+        android:id="@+id/homeicon"
+        android:layout_width="231dp"
+        android:layout_height="355dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/GetStartedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

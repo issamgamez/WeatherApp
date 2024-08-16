@@ -4,18 +4,18 @@
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#e6f902"
-                android:endColor="#e6f902"
-                android:angle="45"/>
-            <corners android:radius="40dp"/>
+                android:startColor="#0209f9"
+                android:endColor="#9f02f9"
+                android:angle="10"/>
+
         </shape>
     </item>
     <!-- Border -->
     <item>
         <shape android:shape="rectangle">
             <stroke
-                android:width="2dp"/>
-            <corners android:radius="40dp"/>
+                android:width="2dp"
+                android:color="#f3ff33"/>
         </shape>
     </item>
 </layer-list>
