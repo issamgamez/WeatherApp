@@ -5,30 +5,110 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WeatherActivity">
+
 
     <ImageView
         android:id="@+id/BackApp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        android:scaleType="centerCrop"
-        android:adjustViewBounds="true"
-        android:visibility="visible"/>
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
 
     <TextView
-        android:id="@+id/ResponseResult"
+        android:id="@+id/search"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/search"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toEndOf="@+id/cityName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/city_name"
+        android:inputType="text"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ResponseCityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="Response City name"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/BackApp"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="@+id/BackApp"
+        app:layout_constraintTop_toBottomOf="@+id/cityName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ResponseCityTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Teperature °C"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/ResponseCityImage"
+        app:layout_constraintTop_toBottomOf="@+id/ResponseCityname"
+        app:layout_constraintVertical_bias="0.027"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ResponseCityImage"
+        android:layout_width="120dp"
+        android:visibility="invisible"
+        android:layout_height="109dp"
+        android:layout_marginTop="279dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ResponseCityname"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/BackApp"
+        app:layout_constraintTop_toTopOf="@+id/cityName"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_cloud_24"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/SpinnerLangue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button_background"
+        app:layout_constraintVertical_bias="0.409" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

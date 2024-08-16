@@ -2,7 +2,6 @@ package com.example.weatherapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -14,12 +13,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
-import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.create
 
 
 class MainActivity : AppCompatActivity() {
-    lateinit var GetStartedButton : TextView
+    lateinit var ResponseResult : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -29,12 +27,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        GetStartedButton = findViewById(R.id.GetStartedTextView)
-        GetStartedButton.setOnClickListener {
-            Intent(this,WeatherActivity::class.java).apply{
-                startActivity(this)
+
+        val getstart = findViewById<TextView>(R.id.GetStartedTextView)
+        getstart.setOnClickListener {
+            Intent(this,WeatherActivity::class.java).also{
+                startActivity(it)
             }
         }
+
+
 
     }
 }

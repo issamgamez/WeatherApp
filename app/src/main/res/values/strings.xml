@@ -2,4 +2,6 @@
     <string name="app_name">WeatherApp</string>
     <string name="todo">todo</string>
     <string name="get_start">Get Start</string>
+    <string name="search">Search</string>
+    <string name="city_name">City Name</string>
 </resources>
