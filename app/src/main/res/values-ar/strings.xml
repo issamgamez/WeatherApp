@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق الطقس</string>
+    <string name="todo">ما يجب القيام به</string>
+    <string name="get_start">هيا بنا نبدأ</string>
+    <string name="search">بحث</string>
+    <string name="city_name">اسم المدينة</string>
+    <string name="weather_app">تطبيق الطقس</string>
+</resources>

@@ -11,31 +11,63 @@
         android:id="@+id/BackApp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
+
+    <Spinner
+        android:id="@+id/SpinnerLangue"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/GetStartedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="204dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/weather_app"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        android:scaleType="centerCrop"
-        android:adjustViewBounds="true"
-        android:visibility="visible"/>
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/GetStartedTextView"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="@string/get_start"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:padding="12dp"
         android:background="@drawable/button_background"
         android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/get_start"
         android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.79" />
 
 

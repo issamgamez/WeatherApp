@@ -26,7 +26,6 @@ class WeatherActivity : AppCompatActivity() {
     private lateinit var responseCityImage: ImageView
     private lateinit var responseCityName: TextView
     private lateinit var responseCityTemperature: TextView
-    private lateinit var SpinnerLangue: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,20 +37,7 @@ class WeatherActivity : AppCompatActivity() {
         responseCityImage = findViewById(R.id.ResponseCityImage)
         responseCityName = findViewById(R.id.ResponseCityname)
         responseCityTemperature = findViewById(R.id.ResponseCityTemperature)
-        SpinnerLangue = findViewById(R.id.SpinnerLangue)
-        var countries = arrayOf("French","English","Arabic")
-        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,countries)
-        SpinnerLangue.adapter = adapter
-        SpinnerLangue.setOnItemSelectedListener( object :AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                Toast.makeText(applicationContext,countries[position],Toast.LENGTH_SHORT).show()
-            }
 
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-
-            }
-
-        })
 
 
         // Set up button click listener
